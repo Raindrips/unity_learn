@@ -1,0 +1,68 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - bullet
+  - river
+  - Heart
+  - Wall
+  - Barrier
+  - Enemy
+  - Bullet
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: background
+    uniqueID: 1970114017
+    locked: 0
+  - name: player
+    uniqueID: 386635169
+    locked: 0
+  - name: bullet
+    uniqueID: 1418781463
+    locked: 0
+  - name: gress
+    uniqueID: 2254490439
+    locked: 0
+  - name: effect
+    uniqueID: 483188685
+    locked: 0
+  - name: UI
+    uniqueID: 808482173
+    locked: 0
