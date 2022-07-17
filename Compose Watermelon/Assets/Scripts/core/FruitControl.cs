@@ -1,4 +1,4 @@
-using System.Collections;
+ï»¿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -22,26 +22,26 @@ public class FruitControl : MonoBehaviour {
 
     public void ChangeFruit(FruitsType fruit) {
 
-        //ĞŞ¸Ä½ÚµãÊôĞÔ
+        //ä¿®æ”¹èŠ‚ç‚¹å±æ€§
         fruit = CheckFruit(fruit);
         fruitType = fruit;
         gameObject.name = fruit.ToString();
 
-        //ĞŞ¸Ä¾«ÁéÍ¼Æ¬
+        //ä¿®æ”¹ç²¾çµå›¾ç‰‡
         var image = GetComponent<Image>();
         int id = (int)fruit;
         Debug.Log("fruit:"+ id);
         image.sprite = fruitSprite[id];
         image.SetNativeSize();
        
-        //ĞŞ¸ÄÎïÀíÊôĞÔ´óĞ¡
+        //ä¿®æ”¹ç‰©ç†å±æ€§å¤§å°
         var collider = GetComponent<CircleCollider2D>();
         var rect = image.GetComponent<RectTransform>();
         collider.radius = rect.rect.width/2;
         
     }
     
-    //¼ì²é²ÎÊıÊÇ·ñºÏ·¨
+    //æ£€æŸ¥å‚æ•°æ˜¯å¦åˆæ³•
     FruitsType CheckFruit(FruitsType fruit) {
         if (fruit < 0) {
             fruit = 0;
@@ -53,7 +53,7 @@ public class FruitControl : MonoBehaviour {
         return fruit;
     }
 
-    //·¢ÉúÅö×²
+    //å‘ç”Ÿç¢°æ’
     //private void OnCollisionEnter2D(Collision2D collision) {
     private void OnCollisionEnter2D(Collision2D collision) {
         string otherTag = collision.collider.tag;
@@ -71,7 +71,7 @@ public class FruitControl : MonoBehaviour {
         }
     }
 
-    //Ë®¹ûºÏ²¢
+    //æ°´æœåˆå¹¶
     void FruitMerge() {
         var image = GetComponent<Image>();
         image.sprite = boom;

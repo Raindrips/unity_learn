@@ -1,0 +1,12 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+//ÓãµÄÊý¾Ý
+[System.Serializable]
+public struct FishDate {
+    public int id;
+    public string name;
+    public int HP;
+    public int gold;
+}
